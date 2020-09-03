@@ -1,0 +1,563 @@
+
+@font-face {
+    font-family: "Futura";
+    src: url("/fonts/futura\ light\ bt.ttf")
+  }
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Futura';
+    color: white;
+    font-family: "Futura";
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: calc(10px + (14 - 10) * ((100vw - 200px) / (1024 - 200)));
+ }
+
+
+ body {
+	background-color: black;
+}
+
+
+.portada{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 120vw;
+    opacity: 1;
+    background-image: url('/img/green-dust-and-scratches.png');
+    box-shadow: inset 0 0 70px #3f3e3e;
+}
+
+
+.ayudaMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 10vw;
+    position: fixed;
+    right: 5%;
+    top: 7%;
+    z-index: 7;
+}
+
+
+.cuadradito{
+    width: 7vw;
+    height: 7vw;
+    background-color:grey;
+    border-style: solid;
+    border-width: 0.3vw;
+    border-color:#309b97;
+    opacity: 0.3;
+    margin-top: 20%;
+    z-index: 6;
+
+}
+
+.cuadradito:hover{
+    background-color: honeydew;
+    opacity: .7;
+}
+
+
+.contenedorBird{
+    position: relative;
+    left: 30%;
+    bottom: 30%;
+    animation: subir 5s infinite ease-in-out;
+}
+
+.contenedorBird:hover {
+    animation: izquierda 2s infinite ease-in-out;
+}
+
+.bird{
+    position: absolute;
+    width: 40vw;
+}
+
+.bird:nth-child(1n){
+    z-index: 4;
+    animation: cambioOpaA 5s infinite ease-in-out;
+}
+
+.bird:nth-child(2n){
+   z-index: 5;
+   animation: cambioOpaB 4s infinite ease-in-out;
+}
+
+.bird:nth-child(3n){
+   z-index: 2;
+   animation: cambioOpaA 4s infinite ease-in-out;
+  }
+
+.bird:nth-child(4n){
+    z-index: 3;
+    animation: cambioOpaB 15s infinite ease-in-out;
+}
+
+.bird:nth-child(5n){
+     z-index: 1;
+     animation: cambioOpaA 5s infinite ease-in-out;
+}
+
+
+@keyframes cambioOpaA {
+    0%, 100% {
+      opacity: 0.5;
+      top: 0vh;
+    }
+    50% {
+        opacity: 1;
+        top: 0vh;
+    }
+  }
+
+  @keyframes cambioOpaB {
+    0%, 100% {
+      opacity: 0.4;
+      top: 0vh;
+    }
+    35% {
+        opacity: 1;
+        top: 0vh;
+    }
+  }
+
+
+@keyframes subir {
+   0%, 100% {
+    transform: translate(0,0px);
+   }
+   35% {
+    transform: translate(0,10px);
+   }
+ }
+
+ @keyframes izquierda {
+    0%, 100% {
+     transform: translate(0,0px);
+    }
+    35% {
+     transform: translate(10px,10px);
+    }
+    75%{
+        transform: translate(10px,0px);
+    }
+  }
+
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tituloA{
+    font-size: 4.2rem;;
+    padding: 10%;
+    opacity: 0.7;
+    color: #309b97;
+    background: url('../img/texturaA.jpg') repeat-x;
+    background-position:0 0;
+    color:transparent;
+    -webkit-font-smoothing:antialiased;
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    -webkit-animation:BackgroundAnimated 20s linear infinite;
+    animation:BackgroundAnimated 20s linear infinite;
+}
+
+
+    @keyframes BackgroundAnimated {
+    0%, 100% {
+        background-position:0 0
+    }
+    50% {
+        background-position:100% 0
+    }
+}
+    @-webkit-keyframes BackgroundAnimated {
+    0%, 100%{
+        background-position:0 0
+    }
+    50% {
+        background-position:100% 0
+    }
+}
+
+
+
+.subTituloA{
+    font-size: 1.7rem;
+    padding: 10%;
+    opacity: 0.7;
+}
+
+.barrita{
+    width: 100%;
+    height: 0.3vh;
+    background-color: gray;
+}
+
+.intro_proyectos{
+    width: 100%;
+    height: 54vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url('/img/texturaB.jpg');
+}
+
+
+.descrip_soy{
+    text-align: center;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 10%;
+    font-size: 1.6rem;
+    line-height: 4vh;
+    opacity: 0.9;
+}
+
+
+.cabras{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.cabras img{
+    position: absolute;
+    width: 50%;
+    
+}
+
+
+.sombras{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.contIntro{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 45%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 10vw;
+    height: 10vw;
+    border-radius: 20vh;
+    box-shadow: 0px 0px 20vw #1f7774;
+}
+
+
+.cabraLuz{
+    opacity: 0;
+    z-index: 1;
+}
+
+.cabraLuz:hover {
+    opacity: 1;
+}
+
+
+#cabraA, #cabraB{
+    position: absolute;
+    width: 25vw;
+    height: 40vw;
+    top: 45%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.ingresa{
+    position:absolute;
+    font-size: 1.3rem;
+    width: 200%;
+    bottom:-20vw;
+    text-align: center;
+    padding: 0.5rem;
+    border: white solid 0.1rem;
+}
+
+.ingresa:hover{
+    color:#1f7774;
+    border: #1f7774 solid 0.11rem;
+}
+
+
+
+.tituloB{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 11vh;
+    text-align: center;
+    font-size: 3rem;
+    opacity: 0.7;
+}
+
+
+.tituloB h2{
+    color: #1f7774;
+}
+.tituloB p{
+    font-size: 2.5rem;
+    opacity: 0.7;
+    
+}
+
+.tituloB h2:hover {
+    color: white;
+    opacity: 0.9;
+}
+
+
+.tituloB p:hover{
+    color: #1f7774;
+}
+
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cont_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.lasImgProyecto{
+    width: 90vw;
+    padding: 2%;
+    margin: 2vh;
+    border: solid grey 0.2vh;
+    opacity: 1;
+}
+
+.cont_img:hover .tituloSobre{
+    opacity: 1;
+}
+
+.cont_img:hover .subtituloSobre{
+    opacity: 1;
+}
+
+.cont_img:hover .lasImgProyecto{
+    opacity: 0.31;
+}
+
+.infoProyectos{
+    position: absolute;
+}
+
+
+.tituloSobre, .subtituloSobre{
+    text-align: center;
+    font-size: 4.2rem;;   
+    z-index: 1;
+    opacity: 0.01;
+    transition: opacity 1s;  
+}
+
+
+.subtituloSobre{
+    font-size: 1.9rem;
+    transition: opacity 2s;
+    color: #1f7774;  
+}
+
+.masInfo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 4vh;
+    font-size: 1.6rem;
+    padding: 10%;
+    width: 100%;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color:rgb(31, 31, 31);
+    font-size: 2vh;
+    border-top: rgb(182, 182, 182) solid .5vh;
+}
+
+
+.fondoProyectos{
+    background: radial-gradient(#181717, #000000);
+}
+
+
+
+@media (min-width: 1024px){
+
+html {
+    font-size: calc(12px + (16 - 12) * ((100vw - 1024px) / (1900 - 1024)));
+ }
+
+.ayudaMenu{
+    right: 3%;
+}
+
+
+.cuadradito{
+    width: 3vw;
+    height: 3vw;
+}
+
+
+.portada{
+    justify-content: flex-start;
+    height: 50vh;
+}
+
+.tituloA{
+    font-size: 2.2rem;
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-bottom: 0%;
+}
+
+.subTituloA{
+    font-size: 1rem;
+    padding-bottom: 0%;
+    padding-left: 3%;
+    padding-top: 0%;
+    order: 2;
+}
+
+
+
+.contenedorBird{
+    position: absolute;
+    left: 45%;
+    top: 3%;
+}
+
+.bird{
+    position: absolute;
+    width: 14vw;
+}
+
+
+.intro_proyectos{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60vh;
+    background-image: url('/img/texturaB.jpg');
+    
+}
+
+.descrip_soy{
+    font-size: 1.4rem;
+    padding:2%;
+    padding-left: 4%;
+    text-align: center;
+    height: 30vh;
+    width: 50%;
+}
+
+.cabras{
+    left: 0%;
+    bottom: 20%;
+}
+
+.cabras img{
+    width: 30vh;
+}
+
+.tituloB{
+    padding-top: 7%;
+    padding-bottom: 5%;
+    flex-direction: row;
+    font-size: 2rem;
+}
+
+
+.proyectos{
+    flex-direction: row;
+}
+
+.lasImgProyecto{
+    width: 30vw;
+}
+
+.tituloSobre{
+ font-size: 2rem;
+}
+.subtituloSobre{
+    font-size: 1.2rem;
+}
+
+.proyectos{
+    padding-top: 4%;
+}
+
+.lasImgProyecto{
+    width:27vw;
+}
+
+.masInfo{
+    font-size: 1.6rem;
+    padding-top: 7%;
+    line-height: 2.3rem;
+    text-align: justify;
+}
+
+.contacto{
+    font-size: 1.5rem;
+}
+
+.ingresa{
+    font-size: 1rem;
+    width: 150%;
+    bottom: -15vw;
+}
+
+#cabraA, #cabraB{
+    position: absolute;
+    width: 20vw;
+    height: 32vw;
+    top: 45%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+
+}
