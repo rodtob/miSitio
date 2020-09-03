@@ -1,13 +1,15 @@
 
 @font-face {
     font-family: "Futura";
-    src: url("../fonts/futura\ light\ bt.ttf")
+    src: url("/fonts/futura\ light\ bt.ttf")
   }
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 *{
     margin: 0%;
     padding: 0%;
-    font-family: 'Futura';
+    font-family: 'Raleway', sans-serif;
     color: white;
     font-family: "Futura";
     box-sizing: border-box;
