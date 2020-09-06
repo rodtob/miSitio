@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "Futura";
-    src: url("/fonts/futura\ light\ bt.ttf")
+    src: url("../fonts/futura\ light\ bt.ttf")
   }
 
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
@@ -32,7 +32,7 @@ html {
     width: 100%;
     height: 120vw;
     opacity: 1;
-    background-image: url('/img/green-dust-and-scratches.png');
+    background-image: url('../img/green-dust-and-scratches.png');
     box-shadow: inset 0 0 70px #3f3e3e;
 }
 
@@ -219,7 +219,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-image: url('/img/texturaB.jpg');
+    background-image: url('../img/texturaB.jpg');
 }
 
 
@@ -484,7 +484,7 @@ html {
     padding-bottom: 0%;
     padding-top: 1%;
     height: 65vh;
-    background-image: url('/img/texturaB.jpg');
+    background-image: url('../img/texturaB.jpg');
     
 }
 
