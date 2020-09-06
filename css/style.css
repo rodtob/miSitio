@@ -169,7 +169,7 @@ html {
     padding: 10%;
     opacity: 0.7;
     color: #309b97;
-    background: url('./img/texturaA.jpg') repeat-x;
+    background: url('img/texturaA.jpg') repeat-x;
     background-position:0 0;
     color:transparent;
     -webkit-font-smoothing:antialiased;
