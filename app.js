@@ -2,18 +2,17 @@ const express = require('express')
 
 const app = express()
 
-app.use(express.static('public'))
 
 app.get('/',(req,res)=>{
-    res.sendFile(__dirname + "/public/preindex.html")
+    res.sendFile(__dirname + "/preindex.html")
 })
 
 app.get('/index', (req,res)=>{
-    res.sendFile(__dirname + '/public/index.html')
+    res.sendFile(__dirname + '/index.html')
 })
 
 app.get('*', (req,res)=>{
-    res.sendFile(__dirname + '/public/error.html')
+    res.sendFile(__dirname + '/error.html')
 })
 
 
