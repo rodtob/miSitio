@@ -1,0 +1,23 @@
+{
+  "name": "rtoblli",
+  "version": "1.0.0",
+  "description": "Página personal en la que presento las cosas que hago.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodtob/porfolio.git"
+  },
+  "author": "rodtob",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodtob/porfolio/issues"
+  },
+  "homepage": "https://github.com/rodtob/porfolio#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
