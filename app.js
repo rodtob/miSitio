@@ -2,12 +2,13 @@ const express = require('express')
 
 const app = express()
 
+app.use(express.static('static'))
 
 app.get('/',(req,res)=>{
     res.sendFile(__dirname + "/preindex.html")
 })
 
-app.get('/index', (req,res)=>{
+app.get('index', (req,res)=>{
     res.sendFile(__dirname + '/index.html')
 })
 
